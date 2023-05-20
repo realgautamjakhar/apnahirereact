@@ -13,6 +13,7 @@ function App() {
             <Route path="/" element={<Dashboard />}>
               <Route index path="jobs" element={<Jobs />} />
               <Route path="reports" element={<Jobs />} />
+              <Route path="manage-coins" element={<Jobs />} />
             </Route>
             <Route path="/post-job" element={<PostJob />} />
           </Route>
