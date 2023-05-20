@@ -15,7 +15,6 @@ import {
   WebsiteIcon,
   WhatsappIcon,
 } from "../Icons";
-import CustomRadio from "../inputs/CustomRadio";
 import RadioButton2 from "../formikInputs/RadioButton2";
 
 const options = [
