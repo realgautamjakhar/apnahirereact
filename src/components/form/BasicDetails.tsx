@@ -22,16 +22,6 @@ const jobDepartments = [
     value: "Software Engineering",
   },
 ];
-const jobRoles = [
-  {
-    label: "Project Management",
-    value: "Project Management",
-  },
-  {
-    label: "Frontend Development",
-    value: "Frontend Development",
-  },
-];
 
 const JobTypes = [
   {

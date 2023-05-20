@@ -1,4 +1,3 @@
-import React from "react";
 import { PreviousJobs } from "../../data/PreviousJobs";
 import { Link } from "react-router-dom";
 
