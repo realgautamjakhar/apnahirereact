@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { BagIcon, CreditCardIcon, ReportIcon } from "./Icons";
 import { NavLink, useLocation } from "react-router-dom";
 const links = [
@@ -21,7 +21,7 @@ const links = [
 
 const Sidebar = () => {
   const location = useLocation();
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <>
@@ -42,9 +42,15 @@ const Sidebar = () => {
           />
         </svg>
       </button>
+      {isOpen && (
+        <div
+          className="fixed md:hidden w-full inset-0 h-full backdrop-blur-sm bg-gray-100/50"
+          onClick={() => setIsOpen(!isOpen)}
+        />
+      )}
       <div
-        className={`bg-white md:relative pt-6 md:pt-0 absolute h-full md:h-auto top-0  z-[100] md:z-0 ${
-          isOpen ? " w-0 opacity-0" : " w-60 md:w-80"
+        className={`bg-white md:relative pt-6 md:pt-0 fixed h-full md:h-auto top-0  z-[100] md:z-0 ${
+          isOpen ? " w-72 " : " w-0 opacity-0"
         } duration-300 ease-linear`}
       >
         <NavLink to={"/"} className=" md:hidden p-4 text-gray-900 text-xl">
